@@ -61,7 +61,7 @@
             var src = S(data.video_url).between('|', '|').s;
             $http({
                 method : "GET",
-                url : "https://lk21.me/"+src,
+                url : "lk21.me/"+src,
                 
             }).then(function(response) {
                 var res = response.data.replace(/\s/g, "");
