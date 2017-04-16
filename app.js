@@ -27,7 +27,7 @@
         var page = 1;
         $http({
             method : "GET",
-            url : "http://lamoovie.com/ganool/nonton.php?type=latest&page=1",
+            url : "https://lamoovie.com/ganool/nonton.php?type=latest&page=1",
             headers:{
                 "X-Requested-With":"com.nonton.layar21"
             }
@@ -42,7 +42,7 @@
             page += 1;
             $http({
                 method : "GET",
-                url : "http://lamoovie.com/ganool/nonton.php?type=latest&page="+page,
+                url : "https://lamoovie.com/ganool/nonton.php?type=latest&page="+page,
                 headers:{
                     "X-Requested-With":"com.nonton.layar21"
                 }
