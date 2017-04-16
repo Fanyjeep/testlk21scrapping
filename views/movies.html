@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Test Scrapping LK21 from popup</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+<div style="padding:20px;text-align:center">
+	<div class="row">
+		<a ng-repeat="data in datas" class="col-md-4" href ng-click="open(data)">
+			<img ng-src="{{data.video_thumbnail}}" height="100" width="200"><br/>
+			<label>{{data.video_title}}</label>
+			<br/>
+			<br/>
+		</a>
+
+	</div>
+	<button class="btn btn-success" style="width:100%" ng-click="loadPage()">Load more</button>
+</div>
