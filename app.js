@@ -29,7 +29,8 @@
             method : "GET",
             url : "https://lamoovie.com/ganool/nonton.php?type=latest&page=1",
             headers:{
-                "X-Requested-With":"com.nonton.layar21"
+                'X-Requested-With':'com.nonton.layar21',
+		'Access-Control-Allow-Origin': '*'
             }
         }).then(function(response) {
             console.log(response.data.result);
@@ -44,7 +45,8 @@
                 method : "GET",
                 url : "https://lamoovie.com/ganool/nonton.php?type=latest&page="+page,
                 headers:{
-                    "X-Requested-With":"com.nonton.layar21"
+                    'X-Requested-With':'com.nonton.layar21',
+		    'Access-Control-Allow-Origin': '*'
                 }
             }).then(function(response) {
                 for (var i = 0; i < response.data.result.length; i++) {
